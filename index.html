@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- ///////start navbar/////// -->
+  <section>
+    <header class="navbar">
+      <div class="logo animate fade-in-left">
+        <i class="fas fa-car-side"></i> CarServices
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav id="nav">
+        <ul class="nav-links animate fade-in">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Blogs">Blogs</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <li>
+            <a href="#" class="btn quote">
+              <i class="fas fa-paper-plane"></i> Get a Quote
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </section>
+  <!-- ///////end navbar/////// -->
+  <!-- ///////start slider/////// -->
+  <section id="Home">
+    <div class="slider">
+      <div class="slide active">
+        <img src="img/download (3).jpg" alt="Car Slide 1">
+        <div class="caption">
+          <h2>Speed and Style</h2>
+          <p>Experience the thrill of modern cars that blend performance with luxury.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/carousel-bg-1.jpg" alt="Car Slide 2">
+        <div class="caption">
+          <h2>Powerful Engines</h2>
+          <p>Discover vehicles equipped with cutting-edge engines built for performance.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/carousel-bg-2.jpg" alt="Car Slide 3">
+        <div class="caption">
+          <h2>Futuristic Design</h2>
+          <p>Drive the future with bold designs and intelligent features that define tomorrow.</p>
+        </div>
+      </div>
+      <button id="prevBtn" class="nav-btn">‹</button>
+      <button id="nextBtn" class="nav-btn">›</button>
+      <button id="toggleBtn" class="play-pause-btn">❚❚</button>
+      <div class="dots-container">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </div>
+  </section><br>
+  <!-- ///////end slider/////// -->
+  <!-- ///////start services/////// -->
+  <section>
+    <div class="line">
+      <div class="left-section"></div>
+      <div class="divider"></div>
+      <div class="right-section"></div>
+    </div>
+
+    <br>
+
+    <section class="services" id="services">
+      <div class="service-box">
+        <i class="fas fa-tools icon"></i>
+        <h3>Quality Servicing</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Work will be fast and well-done.</p>
+        <button class="read-more"
+          data-content="More details about our modern, well-equipped garage, our services, team, and management.">
+          Read More!
+        </button>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-user-cog icon"></i>
+        <h3>Expert Workers</h3>
+        <p>Skilled professionals delivering results so that the work will be fast and well-done.</p>
+        <button class="read-more"
+          data-content="More details about our modern, well-equipped garage, our services, team, and management.">
+          Read More!
+        </button>
+      </div>
+
+      <div class="service-box">
+        <i class="fas fa-wrench icon"></i>
+        <h3>Modern Equipment</h3>
+        <p>We use the latest tools and technologies for fast, efficient, and high-quality service.</p>
+        <button class="read-more"
+          data-content="More details about our modern, well-equipped garage, our services, team, and management.">
+          Read More!
+        </button>
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <p id="modal-text"></p>
+          <button id="close-btn">Close</button>
+        </div>
+      </div>
+    </section><br><br>
+    <!-- ///////end services/////// -->
+    <!-- ///////start about/////// -->
+    <section id="About">
+      <div class="container">
+        <div class="image-box">
+          <img src="img/about.jpg" alt="Car">
+          <div class="experience">15 Years<br>Experience</div>
+        </div>
+
+        <div class="content-box">
+          <p class="about">"About Us"</p>
+          <h2><span>CarServices</span> is the Best and well-planned Place for Your Car Auto Care!</h2>
+
+          <p class="intro-text">
+            Tempor erat elitr rebun at clita. Tempor erat elitr rebun at clita. Diam dolor diam ipsum sit.
+            Aliqu diam amet diam et eos.
+          </p>
+
+          <ul class="features">
+            <li>
+              <strong>01.</strong>Professional & Expert
+              <p>Diam dolor diam ipsum sit amet diam et eos</p>
+            </li>
+            <li>
+              <strong>02.</strong>Quality Servicing Center
+              <p>Diam dolor diam ipsum sit amet diam et eos</p>
+            </li>
+            <li>
+              <strong>03.</strong>Award Winning Workers
+              <p>Diam dolor diam ipsum sit amet diam et eos</p>
+            </li>
+          </ul>
+
+          <button class="read-more2"
+            data-content="This is the More details about ourselves and the things that we have in our modern well-equipped garage that you might need to know about our company, staff and managers.">
+            Read More!
+          </button>
+        </div>
+
+        <div class="modal2" id="modal2">
+          <div class="modal-content2 animate-modal2">
+            <p id="modal-text2"></p>
+            <button id="Close-btn">Close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ///////end about/////// -->
+    <!-- ///////start counter/////// -->
+    <section>
+      <div class="counter-section">
+        <div class="container-counter">
+          <div class="counter-box">
+            <i class="icon-2 fa-solid fa-award"></i>
+            <span class="counter" data-target="1234">0</span>
+            <p>Years Experience</p>
+          </div>
+          <div class="counter-box">
+            <i class="icon-2 fa-solid fa-user-gear"></i>
+            <span class="counter" data-target="1234">0</span>
+            <p>Expert Technicians</p>
+          </div>
+          <div class="counter-box">
+            <i class="icon-2 fa-solid fa-users"></i>
+            <span class="counter" data-target="1234">0</span>
+            <p>Satisfied Clients</p>
+          </div>
+          <div class="counter-box">
+            <i class="icon-2 fa-solid fa-car"></i>
+            <span class="counter" data-target="1234">0</span>
+            <p>Complete Projects</p>
+          </div>
+        </div>
+      </div>
+    </section><br><br>
+    <!-- ///////end counter/////// -->
+    <!-- ///////start our services/////// -->
+    <section id="Services">
+      <div class="services-section">
+        <div class="services-container">
+          <p class="section-label">OUR SERVICES</p>
+          <span class="section-title">Explore Our Services</span>
+          <div class="services-wrapper">
+            <div class="service-tabs">
+              <button class="tab-btn active" data-tab="diagnostic">Diagnostic Test</button>
+              <button class="tab-btn" data-tab="engine">Engine Servicing</button>
+              <button class="tab-btn" data-tab="tires">Tires Replacement</button>
+              <button class="tab-btn" data-tab="oil">Oil Changing</button>
+            </div>
+            <div class="service-content">
+              <div class="tab-content active" id="diagnostic">
+                <img src="img/service-1.jpg" alt="Diagnostic Test" />
+                <div class="content-text">
+                  <h3>15 Years Of Experience</h3>
+                  <p class="short-text">
+                    Diagnostic test service description goes here.
+                  </p>
+                  <p class="full-text" style="display: none;">
+                    Diagnostic tests help identify issues in your vehicle's engine, electrical systems, and more. With
+                    our modern equipment and expert staff, we ensure accurate results and quick fixes.
+                  </p>
+                  <ul>
+                    <li>Quality Servicing</li>
+                    <li>Expert Workers</li>
+                    <li>Modern Equipment</li>
+                  </ul>
+                  <a href="#" class="read-more3">Read More</a>
+                </div>
+              </div>
+              <div class="tab-content" id="engine">
+                <img src="img/service-2.jpg" alt="Engine Servicing" />
+                <div class="content-text">
+                  <h3>Engine Servicing</h3>
+                  <p class="short-text">
+                    Engine servicing details...
+                  </p>
+                  <p class="full-text" style="display: none;">
+                    Our engine servicing includes complete engine diagnostics, oil change, spark plug replacement,
+                    filter checks, and performance tuning using the latest technology.
+                  </p>
+                  <ul>
+                    <li>High Efficiency</li>
+                    <li>Engine Tuning</li>
+                    <li>Expert Team</li>
+                  </ul>
+                  <a href="#" class="read-more3">Read More</a>
+                </div>
+              </div>
+              <div class="tab-content" id="tires">
+                <img src="img/service-3.jpg" alt="Tires Replacement" />
+                <div class="content-text">
+                  <h3>Tires Replacement</h3>
+                  <p class="short-text">
+                    Replacement of tires and balancing...
+                  </p>
+                  <p class="full-text" style="display: none;">
+                    We provide a wide range of branded tires with expert installation, balancing, and alignment services
+                    to keep your car running smooth and safe.
+                  </p>
+                  <ul>
+                    <li>Top Brands</li>
+                    <li>Wheel Alignment</li>
+                    <li>Affordable Prices</li>
+                  </ul>
+                  <a href="#" class="read-more3">Read More</a>
+                </div>
+              </div>
+              <div class="tab-content" id="oil">
+                <img src="img/service-4.jpg" alt="Oil Changing" />
+                <div class="content-text">
+                  <h3>Oil Changing</h3>
+                  <p class="short-text">
+                    High-quality oil change services...
+                  </p>
+                  <p class="full-text">
+                    We offer high-quality oil changes with eco-friendly products that improve engine life and
+                    performance. Fast, reliable, and clean.
+                  </p>
+                  <ul>
+                    <li>Eco-Friendly Oils</li>
+                    <li>Quick Service</li>
+                    <li>Engine Protection</li>
+                  </ul>
+                  <a href="#" class="read-more3">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><br><br><br><br><br>
+    <!-- ///////end  our services/////// -->
+
+    <!-- ///////start Technicians /////// -->
+    <section>
+      <div class="team-section">
+        <h2>"Our Technicians"</h2>
+        <h1>Our Expert Technicians</h1>
+        <div class="team-container">
+          <div class="team-card" data-id="Technician1">
+            <img src="img/team-1.jpg" alt="Technician 1" />
+            <div class="overlay">
+              <div class="icons">
+                <i class="fab fa-facebook-f icon2" data-id="Technician1"></i>
+                <i class="fab fa-twitter icon2" data-id="Technician1"></i>
+                <i class="fab fa-instagram icon2" data-id="Technician1"></i>
+              </div>
+            </div>
+            <h3>Full Name</h3>
+            <p>Designation</p>
+          </div>
+          <div class="team-card" data-id="Technician2">
+            <img src="img/team-2.jpg" alt="Technician 2" />
+            <div class="overlay">
+              <div class="icons">
+                <i class="fab fa-facebook-f icon2" data-id="Technician2"></i>
+                <i class="fab fa-twitter icon2" data-id="Technician2"></i>
+                <i class="fab fa-instagram icon2" data-id="Technician2"></i>
+              </div>
+            </div>
+            <h3>Full Name</h3>
+            <p>Designation</p>
+          </div>
+          <div class="team-card" data-id="Technician3">
+            <img src="img/team-3.jpg" alt="Technician 3" />
+            <div class="overlay">
+              <div class="icons">
+                <i class="fab fa-facebook-f icon2" data-id="Technician3"></i>
+                <i class="fab fa-twitter icon2" data-id="Technician3"></i>
+                <i class="fab fa-instagram icon2" data-id="Technician3"></i>
+              </div>
+            </div>
+            <h3>Full Name</h3>
+            <p>Designation</p>
+          </div>
+          <div class="team-card" data-id="Technician4">
+            <img src="img/team-4.jpg" alt="Technician 4" />
+            <div class="overlay">
+              <div class="icons">
+                <i class="fab fa-facebook-f icon2" data-id="Technician4"></i>
+                <i class="fab fa-twitter icon2" data-id="Technician4"></i>
+                <i class="fab fa-instagram icon2" data-id="Technician4"></i>
+              </div>
+            </div>
+            <h3>Full Name</h3>
+            <p>Designation</p>
+          </div>
+        </div>
+        <div id="modal-team" class="modal-team">
+          <div class="modal-box-team">
+            <span class="close-team">&times;</span>
+            <p id="modal-text-team"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ///////end  Technicians /////// -->
+    <!-- ///////start  Testimonial  /////// -->
+    <section>
+      <div class="testimonial">
+        <h5>"TESTIMONIAL"</h5>
+        <h2>Our Clients Say!</h2>
+        <div class="slider2">
+          <div class="slider-track-wrapper">
+            <div class="slider-track" id="sliderTrack">
+              <div class="slide2">
+                <img src="img/testimonial-1.jpg" alt="Client 1">
+                <h4>Client Name</h4>
+                <p class="job">Web Developer</p>
+                <p class="text">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet amet amet.</p>
+              </div>
+              <div class="slide2">
+                <img src="img/testimonial-2.jpg" alt="Client 2">
+                <h4>Client Name</h4>
+                <p class="job">Graphic Designer</p>
+                <p class="text">Sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet amet amet.</p>
+              </div>
+              <div class="slide2">
+                <img src="img/testimonial-3.jpg" alt="Client 3">
+                <h4>Client Name</h4>
+                <p class="job">Photographer</p>
+                <p class="text">Quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet amet amet.</p>
+              </div>
+              <div class="slide2">
+                <img src="img/testimonial-4.jpg" alt="Client 4">
+                <h4>Client Name</h4>
+                <p class="job">UX Designer</p>
+                <p class="text">Ut enim ad minim veniam. Lorem ipsum dolor sit amet amet amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ///////end  Testimonial  /////// -->
+    <!-- ///////start  blog  /////// -->
+    <br>
+    <section id="Blogs">
+      <div class="blog">
+        <h6>Our Blogs</h6>
+        <h4>Latest Blog Posts</h4>
+        <div class="container-blog">
+          <div class="card-blog" data-title="Blog No.1"
+            data-content="Full content Full content Full content Full content Full content Full content Full content Full content for Blog 1.">
+            <img src="img/team-2.jpg" alt="Blog 1">
+            <h3>Blog Title 1</h3>
+            <p>This is the Short description here to read about Blog No.1!</p>
+          </div>
+          <div class="card-blog" data-title="Blog No.2"
+            data-content="Full content Full content Full content Full content Full content Full content Full content Full content Blog 2.">
+            <img src="img/team-3.jpg" alt="Blog 2">
+            <h3>Blog Title 2</h3>
+            <p>This is the Short description here to read about Blog No.2!</p>
+          </div>
+          <div class="card-blog" data-title="Blog No.3"
+            data-content="Full content Full content Full content Full content Full content Full content Full content Full content Blog 3.">
+            <img src="img/team-4.jpg" alt="Blog 3">
+            <h3>Blog Title 3</h3>
+            <p>This is the Short description here to read about Blog No.3!</p>
+          </div>
+        </div>
+        <div class="popup-blog" id="popupBlog">
+          <div class="popup-content">
+            <span id="closePopup">&times;</span>
+            <h3 id="popupTitle"></h3>
+            <p id="popupText"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br><br>
+    <!-- ///////end  blog  /////// -->
+    <!-- ///////start  contact  /////// -->
+    <section id="Contact">
+      <div class="wrapper">
+        <div class="contact-container">
+          <h2>Contact Us</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <i class="fa fa-user"></i>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <i class="fa fa-envelope"></i>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <i class="fa fa-phone"></i>
+              <input type="tel" id="phone" name="phone" placeholder="Optional" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <i class="fa fa-tag"></i>
+              <select id="subject" name="subject">
+                <option value="">Select a subject</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <i class="fa fa-comment-dots"></i>
+              <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button class="contact-btn" type="submit">Send Message</button>
+            <div class="success-message" id="success-message">
+              Your message has been sent successfully!
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <br><br><br>
+    <!-- ///////end  contact  /////// -->
+    <!-- ///////start  footer  /////// -->
+    <section>
+      <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h4>Address</h4>
+            <p>123 Street, New York, USA</p>
+            <p><i class="fas fa-phone-alt"></i> +012 345 67890</p>
+            <p><i class="fas fa-envelope"></i> mail@domain.com</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4>Opening Hours</h4>
+            <p><strong>Mon – Fri:</strong> 09:00 AM – 09:00 PM</p>
+            <p><strong>Sat – Sun:</strong> 09:00 AM – 12:00 PM</p>
+          </div>
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul class="footer-list">
+              <li><i class="fas fa-angle-right"></i> Diagnostic Test</li>
+              <li><i class="fas fa-angle-right"></i> Engine Servicing</li>
+              <li><i class="fas fa-angle-right"></i> Tires Replacement</li>
+              <li><i class="fas fa-angle-right"></i> Oil Changing</li>
+              <li><i class="fas fa-angle-right"></i> Vacuum Cleaning</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Newsletter</h4>
+            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <form onsubmit="subscribeNewsletter(event)" class="newsletter-form">
+              <input type="email" placeholder="Your email" required />
+              <button type="submit">SIGNUP</button>
+            </form>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>
+            &copy; Your Site Name. All Rights Reserved. Designed By Amirreza Ashoori </p>
+          <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Cookies</a>
+            <a href="#">Help</a>
+            <a href="#">FAQs</a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- ///////end  footer  /////// -->
+    <!-- ///////start  back to top  /////// -->
+    <button id="backToTop" title="Back to Top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- ///////end  back to top  /////// -->
+    <script src="script.js"></script>
+</body>
+</html>
